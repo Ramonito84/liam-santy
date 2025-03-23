@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramonito Casinillo - Civil Engineer Professional Profile</title>
+    <!-- LinkedIn Badge Script -->
+    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #1a237e 0%, #0a66c2 50%, #0077b5 100%);
+            color: white;
+            position: relative;
+            overflow-x: hidden;
+        }
+        .background-animation {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at 50% 50%, rgba(255,255,255,0.1) 0%, transparent 50%);
+            animation: pulse 8s ease-in-out infinite;
+            pointer-events: none;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            box-sizing: border-box;
+            position: relative;
+            z-index: 1;
+        }
+        .content-wrapper {
+            width: 100%;
+            max-width: 800px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+            animation: fadeIn 1.5s ease-in;
+        }
+        .text-content {
+            text-align: center;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .text-content:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+        }
+        .main-slogan {
+            font-size: 3em;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            line-height: 1.2;
+            background: linear-gradient(135deg, #ffffff 0%, #e0e0e0 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .professional-desc {
+            font-size: 1.6em;
+            font-weight: 400;
+            opacity: 0.95;
+            line-height: 1.6;
+            margin: 30px 0;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+        }
+        .badge-container {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px 40px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            animation: slideUp 1s ease-out;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .badge-container:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+        }
+        .divider {
+            width: 150px;
+            height: 4px;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.5), transparent);
+            margin: 20px auto;
+            position: relative;
+        }
+        .divider::before {
+            content: '•';
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            color: rgba(255,255,255,0.8);
+            font-size: 1.2em;
+        }
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); opacity: 0.5; }
+            50% { transform: scale(1.5); opacity: 0.2; }
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @media (max-width: 768px) {
+            .main-slogan {
+                font-size: 2.2em;
+            }
+            .professional-desc {
+                font-size: 1.3em;
+            }
+            .container {
+                padding: 20px;
+            }
+            .content-wrapper {
+                gap: 30px;
+            }
+            .text-content {
+                padding: 25px;
+            }
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="background-animation"></div>
+    <div class="container">
+        <div class="content-wrapper">
+            <div class="text-content">
+                <div class="main-slogan">Cost-effective quality. Built to last</div>
+                <div class="divider"></div>
+                <div class="professional-desc">
+                    Civil Engineer with a 16+ year track record of delivering results and extensive experience
+                </div>
+            </div>
+            <div class="badge-container">
+                <div class="badge-base LI-profile-badge" 
+                     data-locale="en_US" 
+                     data-size="medium" 
+                     data-theme="light" 
+                     data-type="VERTICAL" 
+                     data-vanity="ramonito-casinillo-78332074" 
+                     data-version="v1">
+                    <a class="badge-base__link LI-simple-link" 
+                       href="https://kw.linkedin.com/in/ramonito-casinillo-78332074?trk=profile-badge">
+                       Ramonito Casinillo
+                    </a>
+                </div>
+            </div>
+            <div class="footer">
+                © 2024 Ramonito Casinillo. Professional Civil Engineering Services
+            </div>
+        </div>
+    </div>
+</body>
+</html> 
